@@ -1,7 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix function saves given matrix vector in argument local environment i.e. even if changes happen ingiven vector in global environment
+## stored matrix in makeCacheMatrix will not change
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -18,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Gives inverse matrix of as output and if same matrix given as input gives previously stored data i.e. cached data as output.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
